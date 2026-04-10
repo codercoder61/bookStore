@@ -172,14 +172,7 @@ Route::post('forgetPassword', [forgotPasswordController::class, 'forgetPassword'
 Route::post('/reset/{id}', [forgotPasswordController::class, 'reset']);
 
 Route::get('changemdp2/{id}', [forgotPasswordController::class, 'change']);
-function showdetailsEtd($id)
-{
-    $etd = Etudiant::find($id);
-    // return $etd;
-    $dt = categorie::all();
 
-    return view('profile', ['categorie' => $dt, 'etd' => $etd]);
-}
 Route::get('changemdp2', function () {
     return view('changemdp2');
 });
