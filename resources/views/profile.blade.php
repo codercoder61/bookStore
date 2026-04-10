@@ -102,6 +102,15 @@
             display:flex;
             align-items: center;
         }
+
+        @media screen and (max-width:600px){
+            #profile{
+                flex-direction:column;
+            }
+            #nom{
+                margin-left:unset;
+            }
+        }
     </style>
     <script>
     let out = "";
