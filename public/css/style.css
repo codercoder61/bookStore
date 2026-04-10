@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'cairo';
+    src: url('Cairo/Cairo.ttf');
+}
+body{
+    background-image:url("livres.jpg");
+    height: 100vh;
+    display: flex;
+    width:100vw;
+    background-size:cover;
+}
+
+#preloader{
+    background:#000 url(gif.gif) no-repeat center center;
+    background-size:15%;
+    height:100vh;
+    width:100%;
+    position:fixed;
+    z-index:99100;
+}
+#se_connecter{
+    background-color: #fff;
+    width:400px;
+    margin:auto;
+    border-radius: 20px;
+    min-height: 400px;
+    height: auto;
+}
+@media screen and (max-width: 500px) {
+    #se_connecter{
+        width:90%;
+    }
+}
+#sinscrire{
+    background-color: #fff;
+    width:350px;
+    margin:auto;
+    border-radius: 20px;
+    height: 690px;
+}
+
+#sinscrire p:first-child{
+    background-color: rgb(14, 9, 5);
+    padding:20px;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    align-self: flex-start;
+    border-top-left-radius: 20px;
+    text-transform: uppercase;
+    border-top-right-radius: 20px;
+    font-family: 'cairo';
+}
+#coo{
+    background-color: rgb(14, 9, 5);
+    padding:20px;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    align-self: flex-start;
+    border-top-left-radius: 20px;
+    text-transform: uppercase;
+    border-top-right-radius: 20px;
+    font-family: 'cairo';
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+[type="text"]{
+    width:80%;
+    margin:2% auto;
+    font-family: 'cairo';
+    font-size: 20px;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+[type="password"]{
+    width:80%;
+    margin:2% auto;
+    font-family: 'cairo';
+    font-size: 20px;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+select{
+    width:80%;
+    margin:2% auto;
+    font-family: 'cairo';
+    font-size: 20px;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+[type="submit"]{
+    width:80%;
+    margin:2% auto;
+    font-family: 'cairo';
+    font-size: 25px;
+    border-radius: 20px;
+    padding-left: 10px;
+    background-color: rgb(14, 9, 5);
+    color:white;
+    cursor: pointer;
+}
+
+[type="checkbox"]{
+    margin-left:10%;
+    margin-right: 10px;
+}
+
+hr{
+    width:80%;
+    margin:2% auto;
+}
+
+[href="/inscription"]{
+    text-decoration: none;
+    color:black;
+    display: block;
+    text-align: center;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+
+[href="/forget"]{
+    text-decoration: none;
+    color:black;
+    display: block;
+    text-align: center;
+}
+
+[href="/inscription"]:hover,[href="/forget"]:hover{
+    text-decoration: underline;
+    color:rgb(14, 9, 5);
+}
+
+#compte{
+    text-align: center;
+}
+
+[type="file"]{
+    margin-left:10%;
+}
+
+#choix-groupe,#charger_photo{
+    font-family: 'cairo';
+    font-size: 25px;
+    position: relative;
+    left:10%;
+}
+
+.error{
+    color:red;
+    text-align: center;
+}
+
+#sp{
+    position: relative;
+    /* background-color: red; */
+}
+#eye{
+    /* position:absolute; */
+    /* right:15px; */
+    /* transform: translate(0,-50%); */
+    /* top:50%; */
+    cursor:pointer;
+    position:absolute;
+    left:320px;
+    bottom:20px;
+}
+
+@media (max-device-width:500px){
+    #eye{
+        display:none;
+    }
+}

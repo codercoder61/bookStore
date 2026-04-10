@@ -1,0 +1,259 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'cairo';
+    src: url('Cairo/Cairo.ttf');
+}
+#banner{
+    background-image: url('banner.jpg');
+    width: 100%;
+    height: 290px;
+    background-size: cover;
+    box-shadow: 0 5px 25px rgba(207, 200, 200, 0.15);
+}
+
+#preloader{
+    background:#000 url("gif.gif") no-repeat center center;
+    background-size:15%;
+    height:100vh;
+    width:100%;
+    position:fixed;
+    z-index:99100;
+}
+body{
+    background-color: rgb(15, 8, 1);
+}
+#main{
+    background-color: rgb(37, 28, 16);
+    width:75%;
+    margin:auto;
+    box-shadow: 0 5px 25px rgba(207, 200, 200, 0.15);
+    min-height:100vh;
+}
+
+nav{
+    width:100%;
+    background-color: rgb(14, 9, 5);
+    padding: 2%;
+    box-shadow: 0 5px 25px rgba(207, 200, 200, 0.15);
+}
+
+nav a {
+    color:rgb(224, 224, 103);
+    font-family: 'cairo';
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.acc{
+    font-weight: bold;
+}
+
+aside{
+    color:rgb(224, 224, 103);
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+    margin-top: 1%;
+    font-family: 'cairo';
+    background-color: rgb(14, 9, 5);
+    padding: 1%;
+    border-radius: 20px;
+    height: 100%;
+    width:20%;
+}
+
+aside a {
+    color:rgb(224, 224, 103);
+    text-decoration: none;
+}
+
+aside a:hover{
+    text-decoration: underline;
+}
+
+#cat{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+.click{
+    text-decoration: none;
+}
+
+#ajouter{
+    display: flex;
+    /* flex-direction: column; */
+}
+
+form label{
+    color:white;
+    margin-right: 30px;
+    display: inline-block;
+    width: 15%;
+}
+form input{
+    width:80%;
+    outline: none;
+}
+
+form p {
+    color:rgb(224, 224, 103);
+    font-size: 50px;
+}
+
+form {
+    margin-top: 1%;
+    margin-left: 3%;
+    background-color: rgb(14, 9, 5);
+    border-radius: 30px;
+    padding: 20px;
+    width: 70%;
+}
+
+form p {
+    background-color:rgb(14, 9, 5);
+    border-radius: 30px;
+    padding-left: 2%;
+    font-family: 'cairo';
+}
+
+[type="file"]{
+    color:white;
+}
+
+textarea{
+    outline: none;
+}
+
+#desc{
+    vertical-align: top;
+}
+
+#sub{
+    padding: 10px 15px;
+    background-color: rgb(224, 224, 103);
+    border-radius: 20px;
+    font-weight: bold;
+    position: relative;
+    left:86%
+}
+#ajt{
+    color:rgb(224, 224, 103);
+    margin-left:30px;
+}
+aside div a {
+    display: block;
+}
+
+a + div{
+    display: none;
+}
+
+span + a{
+    margin-left:20px;
+    color:rgb(224, 224, 103);
+    text-decoration: none;
+}
+
+select + a:hover{
+    text-decoration: underline;
+}
+
+i{
+    color: rgb(224, 224, 103);  
+}
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(14, 9, 5);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(224, 224, 103);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  #gear{
+    display: none;
+  }
+  label{
+    font-size:20px;
+  }
+  tr:first-child td{
+        color:white;
+        font-weight:bold;
+        padding:15px;
+    }
+
+    td{
+        color:white;
+        padding:15px;
+    }
+    button{
+        padding: 10px 15px;
+        background-color: rgb(224, 224, 103);
+        border-radius: 20px;
+        font-weight: bold;
+        cursor:pointer;
+    }
+    a{
+        text-decoration:none;
+        color:black;
+    }
+  
+
+  @media screen and (max-width:600px){
+    #main{
+        width:100%;
+    }
+    aside{
+        display: none;
+    }
+    .dropup{
+        display:inline-block;
+    }
+    #gear{
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    #banner{
+      display:none;
+    }
+    form{
+        width:90%;
+        overflow:auto;
+    }
+    #sub{
+        position:relative;
+        left:130px;
+    }
+  }
