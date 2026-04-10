@@ -115,9 +115,7 @@
     #livs{
         width:95%;
     }
-    #main{
-                min-height:1008vh;
-            }}
+}
     </style>
     <script>
         let out = "";

@@ -100,6 +100,10 @@
         }
          }
          @media screen and (max-width: 600px) {
+
+         #vid > p{
+            left:unset !important;
+         }
     .t{
         width:100%;
         height:270px;
@@ -109,8 +113,10 @@
         width:95%;
     }
     #main{
-                min-height:238vh;
-            }}
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+}
 
             #det{
                 margin-top:40px;
