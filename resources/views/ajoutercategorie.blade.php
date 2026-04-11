@@ -112,6 +112,8 @@
     </style>
 </head>
 <body>
+    <div id="preloader"></div>
+
     <div id="main">
         
         <nav class="navbar" style="positon:absolute;" id="navbar">
@@ -180,6 +182,10 @@
       
     </div>
     <script>
+        var loader = document.getElementById("preloader");
+            window.addEventListener('load',function(){
+                loader.style.display="none";
+            });
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
