@@ -24,6 +24,8 @@
     </style>
 </head>
 <body>
+    <div id="preloader"></div>
+
 <div id="main">
         <nav>
             <a class="acc" href="/admin">Accueil</a>
@@ -99,6 +101,10 @@
         </div>
     </div>
     <script>
+        var loader = document.getElementById("preloader");
+            window.addEventListener('load',function(){
+                loader.style.display="none";
+            });
 var dropdown = document.getElementsByClassName("click");
 var i;
 
