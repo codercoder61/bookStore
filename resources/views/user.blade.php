@@ -101,10 +101,6 @@
         aside{
             width:50%;
         }
-        #pag{
-            position: absolute;
-            left:15%;
-        }
          }
          @media screen and (max-width: 600px) {
     .t{
