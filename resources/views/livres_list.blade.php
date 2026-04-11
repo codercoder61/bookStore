@@ -97,6 +97,8 @@ a + div{
     </style>
 </head>
 <body>
+    <div id="preloader"></div>
+
 <div id="main">
         <nav>
             <a class="acc" href="admin">Accueil</a>
@@ -163,6 +165,10 @@ a + div{
         </div>
     </div>
     <script>
+        var loader = document.getElementById("preloader");
+            window.addEventListener('load',function(){
+                loader.style.display="none";
+            });
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 var dropdown = document.getElementsByClassName("click");
 var i;
