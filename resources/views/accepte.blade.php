@@ -43,8 +43,9 @@
     </style>
 </head>
 <body>
-<div id="main">
+    
 <div id="preloader"></div>
+<div id="main">
 
         <nav>
             <a class="acc" href="admin">Accueil</a>
