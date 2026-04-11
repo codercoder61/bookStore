@@ -41,7 +41,6 @@
         h1{
             margin-top:20px;
             color:rgb(224, 224, 103);
-            width:100%;
         }
         ul{
             list-style-type:none;
