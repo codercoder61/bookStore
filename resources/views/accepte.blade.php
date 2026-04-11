@@ -8,7 +8,7 @@
     <link rel="icon" href="banner.jpg" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demandes acceptés</title>
+    <title>Demandes acceptées</title>
     <link rel="stylesheet" href="css/styles5.css"/>
     <style>
       h1{
@@ -59,7 +59,7 @@
               <p id="cat">Tableau de bord</p>
               <hr/>
               <a href="admin">Demandes</a>
-              <a href="accepte">Emprunt</a>
+              <a href="accepte">Dem acceptées</a>
               <a href="etudiant">Etudiants</a>
               <a class="click">Recherche</a>
                   <div>
@@ -73,7 +73,7 @@
                   </div>
           </aside>
           <div id="pl">
-              <h1>Demandes acceptés</h1>
+              <h1>Demandes acceptées</h1>
               @if(isset($demande))
               @foreach ($demande as $item)
                 <div style="margin-top: 20px;margin-left: 20px;">
