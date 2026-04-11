@@ -141,7 +141,15 @@ aside a:hover{
     display: flex;
 }
 
+#titre {
+    positon:relative;
+    left: 20px;
+}
+
 @media screen and (max-width: 600px) {
+    #titre {
+    left: unset;
+}
     #navbar > a:not(:first-child) , #myInput,#sucb{display: none;}
     #navbar a.icon {
       float: right;
